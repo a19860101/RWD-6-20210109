@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="1" width="800" height="600">
+            <tr>
+                <td>
+                    <label for="name">姓名</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">性別</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="男性">
+                    <label for="male">男性</label>
+                    <input type="radio" id="female" name="gender" value="女性">
+                    <label for="female">女性</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="skills">專長</label></td>
+                <td>
+                    <input type="checkbox" name="skills" id="design" value="平面設計">
+                    <label for="design">平面設計</label>
+                    <input type="checkbox" name="skills" id="web" value="網頁設計">
+                    <label for="web">網頁設計</label>
+                    <input type="checkbox" name="skills" id="primere" value="影片剪輯">
+                    <label for="primere">影片剪輯</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="edu">學歷</label></td>
+                <td>
+                    <select name="edu" id="edu">
+                        <option value="國小">國小</option>
+                        <option value="國中">國中</option>
+                        <option value="高中職">高中職</option>
+                        <option value="大專院校">大專院校</option>
+                        <option value="研究所以上">研究所以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="content">內容</label></td>
+                <td>
+                    <textarea name="content" id="content" cols="60" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="送出"></td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>
