@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            display: block;
+ 
+            /* background-color: #fa0; */
+            
+            /* BORDER 邊框 */
+            border: 10px red solid;
+            /* border-left: 10px red solid; */
+            
+            /* border-width: 10px; */
+            /* border-color: red; */
+            /* border-style: solid; */
+
+            /* border-left-color: red; */
+            /* border-right-color: red; */
+            /* border-top-color: red; */
+            /* border-bottom-color: red; */
+
+            /* border-left-width: 10px; */
+            /* border-right-width: 10px; */
+            /* border-top-width: 10px; */
+            /* border-bottom-width: 10px; */
+            
+            /* border-left-style: solid; */
+            /* border-right-style: solid; */
+            /* border-top-style: solid; */
+            /* border-bottom-style: solid; */
+
+            /* 
+                solid, dotted, dashed, double
+                inset, outset, groove, ridge
+            */
+
+            /* PADDING 內距 */
+            /* padding: 30px; */
+
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            /* MARGIN 外距 */
+            /* 上下margin重疊，當數值不同則以大的為主 */
+            /* 左邊auto，區塊靠右；右邊auto，區塊靠左；左右auto則置中 */
+            /* margin: 100px; */
+
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* margin-top: 100px; */
+            /* margin-bottom: 200px; */
+
+            /* margin: 100px auto; */ /* 上下 左右 */
+            /* margin: 100px auto 0; */ /* 上 左右 下 */
+            margin: 100px auto 0 auto; /* 上 右 下 左 */
+        }
+        /* 
+            inline元素
+            沒有width、height（除了img）
+            border、padding、margin只有左右有效
+         */
+    </style>
+</head>
+<body>
+    <h1>box model 盒子模型</h1>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, error!
+    </div>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, error!
+    </div>
+</body>
+</html>
