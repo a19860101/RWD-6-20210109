@@ -10,14 +10,27 @@
         }
         .container {
             width: 1200px;
+            height: 600px;
             margin: auto;
+            background-color: #fa0;
 
             display: flex;
-            background-color: #fa0;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* row, row-reverse, column, column-reverse */
+            /* flex-flow: wrap row-reverse; */
+
+            justify-content:center;
+            /* flex-start, center, flex-end, space-between, space-around, space-evenly */
+            align-items: center;
+            /* flex-start, center, flex-end, stretch, baseline */
+
         }
         .box {
-            width: calc(100% / 3);
+            width: calc(100% / 5);
             padding: 15px;
+
+            background-color: #0af;
         }
     </style>
 </head>
@@ -25,23 +38,41 @@
     <!-- Flexible Box -->
     <div class="container">
         <div class="box">
-            <h2>title</h2>
+            <h2>title 1</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem debitis, maxime aliquam adipisci, earum assumenda quibusdam, tempore minima ratione aspernatur veritatis! Quaerat mollitia quas magnam distinctio. Placeat, quae facilis?
             </p>
         </div>
         <div class="box">
-            <h2>title</h2>
+            <h2>title 2</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem debitis, maxime aliquam adipisci, earum assumenda quibusdam, tempore minima ratione aspernatur veritatis! Quaerat mollitia quas magnam distinctio. Placeat, quae facilis?
             </p>
         </div>
         <div class="box">
-            <h2>title</h2>
+            <h2>title 3</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem debitis, maxime aliquam adipisci, earum assumenda quibusdam, tempore minima ratione aspernatur veritatis! Quaerat mollitia quas magnam distinctio. Placeat, quae facilis?
             </p>
         </div>
+        <!-- <div class="box">
+            <h2>title 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem debitis, maxime aliquam adipisci, earum assumenda quibusdam, tempore minima ratione aspernatur veritatis! Quaerat mollitia quas magnam distinctio. Placeat, quae facilis?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 5</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem debitis, maxime aliquam adipisci, earum assumenda quibusdam, tempore minima ratione aspernatur veritatis! Quaerat mollitia quas magnam distinctio. Placeat, quae facilis?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 6</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem debitis, maxime aliquam adipisci, earum assumenda quibusdam, tempore minima ratione aspernatur veritatis! Quaerat mollitia quas magnam distinctio. Placeat, quae facilis?
+            </p>
+        </div> -->
     </div>
 </body>
 </html>
