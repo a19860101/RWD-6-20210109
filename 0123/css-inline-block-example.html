@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+        }
+        .container {
+            width: 1200px;
+
+            font-size: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* 方法一 */
+        .item {
+            width: calc(100% / 3 - 30px);
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: middle;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: #aaa;
+
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        /* 方法二 */
+        .item-2 {
+            width: calc(100% / 3);
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: middle;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .item-2 .content {
+            background-color: #aaa;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box {
+            /* width: 400px; */
+            /* width: 33.3333%; */
+            width: calc(100% / 3);
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: middle;
+
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="item">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quas nam omnis temporibus id.
+            </p>
+        </div>
+        <div class="item">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quas nam omnis temporibus id.
+            </p>
+        </div>
+        <div class="item">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quas nam omnis temporibus id.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item-2">
+            <div class="content">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quas nam omnis temporibus id.
+                </p>
+            </div>
+        </div>
+        <div class="item-2">
+            <div class="content">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quas nam omnis temporibus id.
+                </p>
+            </div>
+        </div>
+        <div class="item-2">
+            <div class="content">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quas nam omnis temporibus id.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel impedit sed eligendi, vero quae reiciendis.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel impedit sed eligendi, vero quae reiciendis.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel impedit sed eligendi, vero quae reiciendis.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="https://picsum.photos/id/54/600/300" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/45/600/300" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/65/600/300" alt="">
+        </div>
+    </div>
+</body>
+</html>

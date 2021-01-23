@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-size: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #0da;
+            display: inline-block;
+
+            font-size: 16px;
+            vertical-align: top;
+            /* top, middle, bottom, baseline */
+        }
+        /* 
+            inline-block 問題
+            元素之間會有4px不等的空隙
+            解決方式:
+            1. 將父元素的font-size設定為0
+            2. *將元素的font-size還原
+            3. *設定元素的垂直對齊
+        
+         */
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum.
+    </div>
+</body>
+</html>
