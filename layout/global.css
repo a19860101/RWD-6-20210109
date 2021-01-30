@@ -72,3 +72,27 @@
     ^ 開頭是
     $ 結尾是
 */
+/* text-align */
+.t-left {text-align: left;}
+.t-center {text-align: center;}
+.t-right {text-align: right;}
+.t-justify {text-align: justify;}
+
+/* btn */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-pill {
+    border-radius: 50px;
+}
+.btn-light {
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-dark {
+    color: #222;
+    border: 2px solid #222;
+}

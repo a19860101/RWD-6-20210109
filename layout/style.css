@@ -31,8 +31,7 @@ nav a {
 /* header */
 header {
     background-color: #ba00c0;
-   
 }
 header .col-12 {
-    text-align: center;
+    border-bottom: #fff 2px solid;
 }
