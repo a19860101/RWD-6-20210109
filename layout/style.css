@@ -83,7 +83,7 @@ header i {
 /* slogan */
 
 #slogan {
-    background-color: #383838;
+    background-color: #111;
     color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -91,7 +91,10 @@ header i {
 #slogan h2{
     font-weight: 300;
     font-size: 40px;
-    position: relative;
+}
+#slogan p {
+    color: #5c5c5c;
+    font-size: 20px;
 }
 /* title 兩邊槓槓 */
 .title {
@@ -117,4 +120,9 @@ header i {
 }
 .title-dark {
     color: #222;
+}
+/* presets */
+#presets h2{
+    font-size: 40px;
+    font-weight: 300;
 }
