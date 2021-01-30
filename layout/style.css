@@ -40,3 +40,6 @@ header .col-12 {
 header .row {
     align-items: baseline;
 }
+header i {
+    margin-right: 15px;
+}
