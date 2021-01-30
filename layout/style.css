@@ -43,3 +43,11 @@ header .row {
 header i {
     margin-right: 15px;
 }
+/* update */
+
+#update {
+    background-color: #230046;
+}
+#update .row {
+    align-items: center;
+}
