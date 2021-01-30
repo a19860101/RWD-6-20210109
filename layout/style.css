@@ -9,7 +9,7 @@ nav {
     /* height: 75px; */
     /* line-height: 75px; */
 
-    border-bottom:4px #427eff solid;
+    border-bottom:2px #fff solid;
 }
 nav > .row {
     /* height: 75px; */
@@ -30,8 +30,13 @@ nav a {
 }
 /* header */
 header {
-    background-color: #ba00c0;
+    /* background-color: #ba00c0; */
+    background-image: linear-gradient(to right bottom ,#c342eb,#af00e4);
+    padding-bottom: 30px;
 }
 header .col-12 {
     border-bottom: #fff 2px solid;
+}
+header .row {
+    align-items: baseline;
 }
