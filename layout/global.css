@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+/* * RESET CSS */
+:root {
+    --red:#f82c3d;
+    --blue:#0084ff;
+    --green:#419957;
+    --orange: #ffd447;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' , '微軟正黑體';
+}
+.w-100 {
+    width: 100%;
+}
+h1 {
+    color: var(--orange);
+}
+p {
+    color: var(--red);
+}
