@@ -91,4 +91,24 @@ header i {
 #slogan h2{
     font-weight: 300;
     font-size: 40px;
+    position: relative;
+
+}
+#slogan h2::before {
+    content: "";
+    display: inline-block;
+    border-bottom: #fff solid 2px;
+    width: 60px;
+    position: absolute;
+    top: 21px;
+    left: 120px;
+}
+#slogan h2::after {
+    content: "";
+    display: inline-block;
+    border-bottom: #fff solid 2px;
+    width: 60px;
+    position: absolute;
+    top: 21px;
+    right: 120px;
 }
