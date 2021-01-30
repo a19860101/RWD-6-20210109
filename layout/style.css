@@ -92,23 +92,29 @@ header i {
     font-weight: 300;
     font-size: 40px;
     position: relative;
-
 }
-#slogan h2::before {
+/* title 兩邊槓槓 */
+.title {
+    position: relative;
+}
+.title::before ,.title::after {
     content: "";
     display: inline-block;
-    border-bottom: #fff solid 2px;
     width: 60px;
     position: absolute;
     top: 21px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+.title::before {
     left: 120px;
 }
-#slogan h2::after {
-    content: "";
-    display: inline-block;
-    border-bottom: #fff solid 2px;
-    width: 60px;
-    position: absolute;
-    top: 21px;
+.title::after {
     right: 120px;
+}
+.title-light {
+    color: #fff;
+}
+.title-dark {
+    color: #222;
 }
