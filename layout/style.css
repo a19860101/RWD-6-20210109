@@ -47,7 +47,20 @@ header i {
 
 #update {
     background-color: #230046;
+    padding-top: 100px;
+    padding-bottom: 100px;   
 }
 #update .row {
     align-items: center;
+}
+#update h2 {
+    font-size: 92px;
+    color: #fff;
+    padding: 0 10px;
+    font-family: 'Ubuntu Condensed';
+}
+#update p {
+    font-size: 36px;
+    color: #fff;
+    padding: 20px 10px 50px;
 }
