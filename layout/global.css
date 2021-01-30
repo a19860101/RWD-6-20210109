@@ -66,6 +66,9 @@
 [class^="col"]{
     padding: 15px;
 }
+.no-padding > [class^="col"]{
+    padding: 0;
+}
 /* 
     * 包含
     ^ 開頭是
