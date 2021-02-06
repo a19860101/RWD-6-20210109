@@ -324,6 +324,7 @@ footer a {
     margin: 0 2px;
 }
 footer i {
+    vertical-align: middle!important;
 }
 .privacy {
     margin-top: 20px;
