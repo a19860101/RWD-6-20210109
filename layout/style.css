@@ -226,3 +226,14 @@ header i {
     font-weight: normal;
     margin: 30px 0;
 }
+.support-hr {
+    border-bottom: 2px solid #fff;
+    margin: 30px 15px;
+}
+#support .row {
+    align-items: center;
+}
+.support-question {
+    font-size: 32px;
+    color: #222;
+}
