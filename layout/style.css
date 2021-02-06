@@ -121,6 +121,10 @@ header i {
     color: #222;
 }
 /* presets */
+#presets {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 #presets h2{
     font-size: 40px;
     font-weight: 300;
@@ -148,4 +152,29 @@ header i {
 .presets-info {
     margin-top: 15px;
 }
+/* Number */
+#number {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-image: 
+    linear-gradient(to right bottom ,hsla(286, 81%, 59%, 0.534),hsla(286, 100%, 45%, 0.506)),
+        url("images/bg.jpg"); */
+    background-color: #c342eb;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center center;
 
+    background-blend-mode: multiply;
+    
+}
+#number i {
+    color: #222;
+}
+#number h3 {
+    font-size: 36px;
+    color: #fff;
+    margin: 30px 0;
+}
+#number p {
+    color: #fff;
+}
