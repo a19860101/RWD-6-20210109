@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2,.box3,.box4,.box5 {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6161;
+            margin-bottom: 10px;
+            transition-duration: 3s;
+
+            /* transition: 1s ease; */
+
+            /* transition-property: width,height, background-color; */
+            /* transition-duration: 1s; */
+            /* transition-delay: 0s, 1s, 2s; */
+            
+            /* transition-timing-function: ease; */
+        }
+        /*虛擬類別*/
+        /* .box:hover { */
+            /* background-color: #3397f5; */
+            /* width: 600px; */
+            /* height: 400px; */
+        /* } */
+        .box1 {
+            transition-timing-function: ease;
+        }
+        .box2 {
+            transition-timing-function: ease-in;
+        }
+        .box3 {
+            transition-timing-function: ease-out;
+        }
+        .box4 {
+            transition-timing-function: ease-in-out;
+        }
+        .box5 {
+            transition-timing-function: linear;
+        }
+        .container:hover .box {
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>    
+    </div>
+</body>
+</html>
