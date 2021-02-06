@@ -242,3 +242,28 @@ header i {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.quote-content {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+.quote-content i{
+    color: #aaa;
+}
+.quote-content p {
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.75;
+}
+.quote-author {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+.quote-link a{
+    color: #666;
+}
