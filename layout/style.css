@@ -296,3 +296,12 @@ header i {
     color: #fff;
     font-size: 14px;
 }
+.team-hr {
+    border-bottom: 2px solid #fff;
+    margin: 30px 15px;
+}
+.team-thanks p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
