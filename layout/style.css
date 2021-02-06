@@ -304,4 +304,28 @@ header i {
     color: #fff;
     margin-bottom: 30px;
 }
-
+/* footer */
+footer {
+    padding-top: 20px;
+    padding-bottom: 2px;
+    background-color: #42404b;
+    color: #eee;
+}
+footer a {
+    display: inline-block;
+    color: #42404b;
+    width: 35px;
+    height: 35px;
+    clip-path: circle();
+    background-color: #eee;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+footer i {
+}
+.privacy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
