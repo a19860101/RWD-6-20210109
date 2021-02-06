@@ -27,6 +27,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+.col {
+    flex: 1 0 0;
+}
 .col-1 {
     flex: 0 0 calc(100% / 12 * 1);
 }
