@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fa0;
+        }
+        .box:hover {
+            animation: test2 1s;
+        }
+        @keyframes flash {
+            0% {
+                background-color: #fa0;
+            }
+            49% {
+                background-color: #fa0;
+            }
+            50% {
+                background-color: #0fff57;
+            }
+            99% {
+                background-color: #0fff57;
+            }
+            100% {
+                background-color: #fa0;
+            }
+        }
+        @keyframes test {
+            from {
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+            to {
+                opacity: 1;
+                transform: rotate(135deg);   
+            }
+        }
+        @keyframes test2 {
+            0% {
+                background-color: #fa0;
+                transform: translate(0,0);
+            }
+            50% {
+                background-color: #caf;
+                transform: translate(300px,0);
+                }
+            100% {
+                background-color: #0fc;
+                transform: translate(300px,300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
