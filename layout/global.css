@@ -90,7 +90,9 @@
     text-decoration: none;
     border-radius: 5px;
     margin: 10px;
+    transition: .3s;
 }
+
 .btn-pill {
     border-radius: 50px;
 }
@@ -98,7 +100,15 @@
     color: #fff;
     border: 2px solid #fff;
 }
+.btn-light:hover {
+    background-color: #fff;
+    color: #222;
+}
 .btn-dark {
     color: #222;
     border: 2px solid #222;
+}
+.btn-dark:hover {
+    background-color: #222;
+    color: #fff;
 }
