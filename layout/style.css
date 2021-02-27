@@ -131,14 +131,24 @@ header i {
 }
 .presets-item {
     position: relative;
+    overflow: hidden;
 }
 .presets-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
+    /* background-color: rgba(0,0,0,.5); */
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.8));
     color: #fff;
     padding:50px 30px 10px;
+
+    opacity: 0;
+    transform:translateY(50%);
+    transition: .3s;
+}
+.presets-item:hover .presets-overlay {
+    opacity: 1;
+    transform:translateY(0%);
 }
 .presets-link {
     padding-right: 10px;
@@ -220,6 +230,12 @@ header i {
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 30px;
+
+    transition: .3s;
+}
+.support-content:hover {
+    background-color: #fff;
+    color: #444;
 }
 .support-content h3{
     font-size: 32px;
