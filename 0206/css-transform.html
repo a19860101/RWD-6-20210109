@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            perspective: 800px;
+        }
         .box {
             width: 150px;
             height: 150px;
             background-color: #13d9f3;
             margin: auto;
 
-            transform: perspective(800px)skewY(45deg)
+            /* transform: perspective(800px)rotateY(180deg) */
             /* 
                 scale(),rotate(),translate(),skew()
                 scaleX(),scaleY(),scaleZ(),
@@ -21,6 +24,11 @@
                 skewX(),skewY(),
                 perspective()
              */
+
+             transition: 1s;
+        }
+        .box:hover {
+            transform: rotateY(180deg)
         }
     </style>
 </head>
