@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip {
+            width: 200px;
+            height: 300px;
+            /* background-color: #ccc; */
+            position: relative;
+
+            perspective: 800px;
+        }
+
+        .front {
+            width: 100%;
+            height: 100%;
+            background-color: #f14141;
+            position: absolute;
+            transition: 0.5s;
+            transform-origin: left;
+            opacity: 1;
+        }
+        .flip:hover .front {
+            transform: rotateY(60deg);
+            opacity: 0;
+        }
+        .back {
+            width: 100%;
+            height: 100%;
+            background-color: #67b5ff;
+            position: absolute;
+
+            transform: rotateY(-45deg);
+            backface-visibility: hidden;
+            transition: 0.5s;
+            transform-origin: left;
+            opacity: 0;
+
+        }
+        .flip:hover .back {
+            transform: rotateY(0deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flip">
+        <div class="front">
+            FRONT
+        </div>
+        <div class="back">
+            BACK
+        </div>
+    </div>
+</body>
+</html>
