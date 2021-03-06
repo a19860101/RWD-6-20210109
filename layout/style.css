@@ -92,6 +92,7 @@ header {
     /* background-color: #ba00c0; */
     background-image: linear-gradient(to right bottom ,#c342eb,#af00e4);
     padding-bottom: 30px;
+    padding-top: 60px;
 }
 header .header-img {
     border-bottom: #fff 2px solid;
