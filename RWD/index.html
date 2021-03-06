@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 1 0 0;
+        }
+        .col-1 {
+            flex: 0 0 calc(100% / 12 * 1);
+        }
+        .col-2 {
+            flex: 0 0 calc(100% / 12 * 2);
+        }
+        .col-3 {
+            flex: 0 0 calc(100% / 12 * 3);
+        }
+        .col-4 {
+            flex: 0 0 calc(100% / 12 * 4);
+        }
+        .col-5 {
+            flex: 0 0 calc(100% / 12 * 5);
+        }
+        .col-6 {
+            flex: 0 0 calc(100% / 12 * 6);
+        }
+        .col-7 {
+            flex: 0 0 calc(100% / 12 * 7);
+        }
+        .col-8 {
+            flex: 0 0 calc(100% / 12 * 8);
+        }
+        .col-9 {
+            flex: 0 0 calc(100% / 12 * 9);
+        }
+        .col-10 {
+            flex: 0 0 calc(100% / 12 * 10);
+        }
+        .col-11 {
+            flex: 0 0 calc(100% / 12 * 11);
+        }
+        .col-12 {
+            flex: 0 0 calc(100% / 12 * 12);
+        }
+        [class^="col"]{
+            padding: 15px;
+        }
+        .no-padding > [class^="col"]{
+            padding: 0;
+        }
+        @media (min-width: 600px){
+            .container {
+                width: 600px;
+                margin: auto;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col-sm {
+                flex: 1 0 0;
+            }
+            .col-sm-1 {
+                flex: 0 0 calc(100% / 12 * 1);
+            }
+            .col-sm-2 {
+                flex: 0 0 calc(100% / 12 * 2);
+            }
+            .col-sm-3 {
+                flex: 0 0 calc(100% / 12 * 3);
+            }
+            .col-sm-4 {
+                flex: 0 0 calc(100% / 12 * 4);
+            }
+            .col-sm-5 {
+                flex: 0 0 calc(100% / 12 * 5);
+            }
+            .col-sm-6 {
+                flex: 0 0 calc(100% / 12 * 6);
+            }
+            .col-sm-7 {
+                flex: 0 0 calc(100% / 12 * 7);
+            }
+            .col-sm-8 {
+                flex: 0 0 calc(100% / 12 * 8);
+            }
+            .col-sm-9 {
+                flex: 0 0 calc(100% / 12 * 9);
+            }
+            .col-sm-10 {
+                flex: 0 0 calc(100% / 12 * 10);
+            }
+            .col-sm-11 {
+                flex: 0 0 calc(100% / 12 * 11);
+            }
+            .col-sm-12 {
+                flex: 0 0 calc(100% / 12 * 12);
+            }
+            [class^="col"]{
+                padding: 15px;
+            }
+            .no-padding > [class^="col"]{
+                padding: 0;
+            }
+        }
+        @media (min-width: 1200px){
+            .container {
+                width: 1200px;
+                margin: auto;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col-lg {
+                flex: 1 0 0;
+            }
+            .col-lg-1 {
+                flex: 0 0 calc(100% / 12 * 1);
+            }
+            .col-lg-2 {
+                flex: 0 0 calc(100% / 12 * 2);
+            }
+            .col-lg-3 {
+                flex: 0 0 calc(100% / 12 * 3);
+            }
+            .col-lg-4 {
+                flex: 0 0 calc(100% / 12 * 4);
+            }
+            .col-lg-5 {
+                flex: 0 0 calc(100% / 12 * 5);
+            }
+            .col-lg-6 {
+                flex: 0 0 calc(100% / 12 * 6);
+            }
+            .col-lg-7 {
+                flex: 0 0 calc(100% / 12 * 7);
+            }
+            .col-lg-8 {
+                flex: 0 0 calc(100% / 12 * 8);
+            }
+            .col-lg-9 {
+                flex: 0 0 calc(100% / 12 * 9);
+            }
+            .col-lg-10 {
+                flex: 0 0 calc(100% / 12 * 10);
+            }
+            .col-lg-11 {
+                flex: 0 0 calc(100% / 12 * 11);
+            }
+            .col-lg-12 {
+                flex: 0 0 calc(100% / 12 * 12);
+            }
+            [class^="col"]{
+                padding: 15px;
+            }
+            .no-padding > [class^="col"]{
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container row">
+        <div class="col-3">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
+            </p>
+        </div>
+        <div class="col-3">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
+            </p>
+        </div>
+        <div class="col-3">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
+            </p>
+        </div>
+        <div class="col-3">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
