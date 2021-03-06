@@ -9,6 +9,9 @@
         * {
             box-sizing: border-box;
         }
+        img {
+            width: 100%;
+        }
         .container {
             width: 100%;
             margin: auto;
@@ -62,9 +65,9 @@
         .no-padding > [class^="col"]{
             padding: 0;
         }
-        @media (min-width: 600px){
+        @media (min-width: 480px){
             .container {
-                width: 600px;
+                width: 480px;
                 margin: auto;
             }
             .row {
@@ -117,9 +120,64 @@
                 padding: 0;
             }
         }
-        @media (min-width: 1200px){
+        @media (min-width: 768px){
             .container {
-                width: 1200px;
+                width: 768px;
+                margin: auto;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col-md {
+                flex: 1 0 0;
+            }
+            .col-md-1 {
+                flex: 0 0 calc(100% / 12 * 1);
+            }
+            .col-md-2 {
+                flex: 0 0 calc(100% / 12 * 2);
+            }
+            .col-md-3 {
+                flex: 0 0 calc(100% / 12 * 3);
+            }
+            .col-md-4 {
+                flex: 0 0 calc(100% / 12 * 4);
+            }
+            .col-md-5 {
+                flex: 0 0 calc(100% / 12 * 5);
+            }
+            .col-md-6 {
+                flex: 0 0 calc(100% / 12 * 6);
+            }
+            .col-md-7 {
+                flex: 0 0 calc(100% / 12 * 7);
+            }
+            .col-md-8 {
+                flex: 0 0 calc(100% / 12 * 8);
+            }
+            .col-md-9 {
+                flex: 0 0 calc(100% / 12 * 9);
+            }
+            .col-md-10 {
+                flex: 0 0 calc(100% / 12 * 10);
+            }
+            .col-md-11 {
+                flex: 0 0 calc(100% / 12 * 11);
+            }
+            .col-md-12 {
+                flex: 0 0 calc(100% / 12 * 12);
+            }
+            [class^="col"]{
+                padding: 15px;
+            }
+            .no-padding > [class^="col"]{
+                padding: 0;
+            }
+        }
+        @media (min-width:1024px){
+            .container {
+                width: 1024px;
                 margin: auto;
             }
             .row {
@@ -171,30 +229,105 @@
             .no-padding > [class^="col"]{
                 padding: 0;
             }
+        @media (min-width:1440px){
+            .container {
+                width: 1440px;
+                margin: auto;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col-xl {
+                flex: 1 0 0;
+            }
+            .col-xl-1 {
+                flex: 0 0 calc(100% / 12 * 1);
+            }
+            .col-xl-2 {
+                flex: 0 0 calc(100% / 12 * 2);
+            }
+            .col-xl-3 {
+                flex: 0 0 calc(100% / 12 * 3);
+            }
+            .col-xl-4 {
+                flex: 0 0 calc(100% / 12 * 4);
+            }
+            .col-xl-5 {
+                flex: 0 0 calc(100% / 12 * 5);
+            }
+            .col-xl-6 {
+                flex: 0 0 calc(100% / 12 * 6);
+            }
+            .col-xl-7 {
+                flex: 0 0 calc(100% / 12 * 7);
+            }
+            .col-xl-8 {
+                flex: 0 0 calc(100% / 12 * 8);
+            }
+            .col-xl-9 {
+                flex: 0 0 calc(100% / 12 * 9);
+            }
+            .col-xl-10 {
+                flex: 0 0 calc(100% / 12 * 10);
+            }
+            .col-xl-11 {
+                flex: 0 0 calc(100% / 12 * 11);
+            }
+            .col-xl-12 {
+                flex: 0 0 calc(100% / 12 * 12);
+            }
+            [class^="col"]{
+                padding: 15px;
+            }
+            .no-padding > [class^="col"]{
+                padding: 0;
+            }
         }
+    }
     </style>
 </head>
 <body>
     <div class="container row">
-        <div class="col-3">
+        <div class="col-xl-2 col-md-4 col-6">
+            <img src="https://picsum.photos/id/57/400" alt="">
+        </div>
+        <div class="col-xl-2 col-md-4 col-6">
+            <img src="https://picsum.photos/id/57/400" alt="">
+        </div>
+        <div class="col-xl-2 col-md-4 col-6">
+            <img src="https://picsum.photos/id/57/400" alt="">
+        </div>
+        <div class="col-xl-2 col-md-4 col-6">
+            <img src="https://picsum.photos/id/57/400" alt="">
+        </div>
+        <div class="col-xl-2 col-md-4 col-6">
+            <img src="https://picsum.photos/id/57/400" alt="">
+        </div>
+        <div class="col-xl-2 col-md-4 col-6">
+            <img src="https://picsum.photos/id/57/400" alt="">
+        </div>
+    </div>
+    <div class="container row">
+        <div class="col-lg-3 col-md-6 col-12">
             <h2>title</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-12">
             <h2>title</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-12">
             <h2>title</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-12">
             <h2>title</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur nam totam enim, commodi recusandae, repellat incidunt aspernatur laborum voluptatum obcaecati? Voluptatibus molestiae omnis aliquid reiciendis ullam nostrum assumenda rem!
