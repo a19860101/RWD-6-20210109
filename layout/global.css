@@ -74,7 +74,7 @@
 }
 @media (min-width: 480px){
     .container {
-        width: 480px;
+        width: 460px;
     }
     .col-sm {
         flex: 1 0 0;
@@ -118,7 +118,7 @@
 }
 @media (min-width: 768px){
     .container {
-        width: 768px;
+        width: 750px;
     }
     .col-md {
         flex: 1 0 0;
@@ -160,9 +160,10 @@
         flex: 0 0 calc(100% / 12 * 12);
     }
 }
+/* 1024 */
 @media (min-width:1024px){
     .container {
-        width: 1024px;
+        width: 1000px;
     }
     .col-lg {
         flex: 1 0 0;
@@ -204,9 +205,10 @@
         flex: 0 0 calc(100% / 12 * 12);
     }
 }
+/* 1440 */
 @media (min-width:1440px){
     .container {
-        width: 1440px;
+        width: 1425px
     }
     .col-xl {
         flex: 1 0 0;
