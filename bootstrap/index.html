@@ -32,6 +32,21 @@
             top: 0;
             width: 100%;
             height: 100%;
+            background-color:rgba(0,0,0,.8);
+            opacity: 0;
+            color: #eeeeee!important;
+            
+            transition:  .3s;
+        }
+        #product .zoom i {
+            transform: translateY(30px);
+            transition:  .3s;
+        }
+        #product a:hover .zoom{
+            opacity: 1;
+        }
+        #product a:hover .zoom i {
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -200,7 +215,7 @@
     <div id="product">
         <div class="row no-gutters">
             <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block position-relative"  class="d-block position-relative">
+                <a href="#" class="d-block position-relative "  class="d-block position-relative">
                     <img src="https://picsum.photos/id/34/800/600" class="w-100">
                     <span class="position-absolute zoom d-flex justify-content-center align-items-center"><i class="fas fa-search fa-3x"></i></span>
                 </a>
