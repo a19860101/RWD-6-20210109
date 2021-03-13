@@ -1,4 +1,13 @@
 {
+	"Print to console": {
+		"scope": "javascript,typescript,html",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
 	"Bootstrap 5.x": {
 		"prefix": "bs5",
 		"body": [
@@ -29,6 +38,13 @@
 		"prefix": "vue3",
 		"body": ["<script src=\"https://unpkg.com/vue@next\"></script>"],
 		"description": "Vue 3"
+	},
+	"jQuery 3.x": {
+		"prefix": "jq",
+		"body": [
+		  "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>"
+		],
+		"description": "jQuery 3.x"
 	}
 	
 }
