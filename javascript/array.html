@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let x = new Array();
+        // x[0] = '紅茶';
+        // x[1] = '綠茶';
+        // x[2] = '奶茶';
+
+        // let x = new Array('紅茶','綠茶','奶茶');
+
+        let x = ['紅茶','綠茶','奶茶','拿鐵','美式','波霸奶茶'];
+
+        // console.log(x);
+        // console.log(x[0]);
+        // console.log(x[1]);
+        // console.log(x[2]);
+        console.log(x.length);
+        // 陣列迭代
+        // for(let i=0;i<x.length;i++){
+        //     console.log(x[i]);
+        // }
+
+        // for(let i in x){
+        //     console.log(x[i]);
+        // }
+
+        //push, pop, unshift, shift
+        // x.push('冰淇淋紅茶');
+        // x.pop();
+        // x.unshift('冰淇淋紅茶');
+        // x.shift();
+
+        //splice 拼接
+        // x.splice(0,0,'藍山');
+        // x.splice(3,1); //刪除陣列索引值3的資料
+
+        //slice 切片
+        // let d = x.slice(1,5);
+        // console.log(d);
+        
+        //join() 陣列轉字串
+        let x_string = x.join();
+        console.log(x_string)
+
+        //split() 字串轉陣列
+        let s = 'HELLO,WORLD,QQQ';
+        // let s_array = s.split(',');
+        let s_array = s.split('');
+        console.log(s_array);
+
+        for(let drink of x){
+            console.log(drink);
+        }
+    </script>
+</body>
+</html>

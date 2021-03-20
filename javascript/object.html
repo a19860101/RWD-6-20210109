@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let user = new Object();
+        // user.name = 'John';
+        // user.mail = 'asdf@gmail.com';
+        // let user = new Object({
+        //     name: 'John',
+        //     mail: 'asdf@gmail.com'
+        // })
+
+        let user = {
+            name: 'John',
+            mail: 'asdf@gmail.com',
+            age: 18
+        }
+
+        console.log(user);
+
+        console.log(user.name);
+        console.log(user.mail);
+        console.log(user.age);
+
+        let drinks = [
+            {
+                id:1,
+                title: '紅茶',
+                price: 20
+            },
+            {
+                id:2,
+                title: '綠茶',
+                price: 20
+            },
+            {
+                id:3,
+                title: '奶茶',
+                price: 25
+            }
+        ];
+        console.log(drinks);
+        // for(let drink of drinks){
+        //     console.log(drink.title);
+        //     console.log(drink.price);
+        // }
+        drinks.forEach(function(drink,index){
+            console.log(drink.title);
+            console.log(drink.price);
+        })
+    </script>
+</body>
+</html>

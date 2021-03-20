@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let drinks = ['紅茶','綠茶','奶茶','拿鐵','美式','波霸奶茶'];
+
+        // forEach
+        drinks.forEach(function(drink,index){
+            console.log(drink,index);
+        });
+
+        // map
+        let new_drinks = drinks.map(function(drink){
+            return drink+123
+        })
+        console.log(new_drinks);
+
+        // find
+        let x = [100,200,15,36,57,14];
+        let x_find = x.find(function(data){
+            return data == 55;
+        })
+        console.log(x_find);
+
+        // filter
+        let x_filter = x.filter(function(data){
+            return data % 2 == 0;
+        })
+        console.log(x_filter);
+
+        // reduce()
+        let x_reduce = x.reduce(function(a,b){
+            return a+b;
+        })
+        console.log(x_reduce);
+
+        //includes()
+        console.log(x.includes(100));
+        console.log(x.includes(1100));
+        console.log(drinks.includes('布丁奶茶'));
+
+        //indexOf()
+        console.log(x.indexOf(140))
+        let s = 'HELLO JAVASCRIPT!';
+        console.log(s.indexOf('J'));
+        
+
+    </script>
+</body>
+</html>
