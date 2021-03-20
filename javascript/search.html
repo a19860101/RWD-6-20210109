@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" onkeyup="search()">
+
+    <ul>
+        <li>熟成紅茶</li>
+        <li>麗春紅茶</li>
+        <li>太妃紅茶</li>
+        <li>雪藏紅茶</li>
+        <li>熟成冷露</li>
+        <li>雪花冷露</li>
+        <li>春芽冷露</li>
+        <li>春芽綠茶</li>
+        <li>春梅冰茶</li>
+        <li>冷露歐蕾</li>
+        <li>白玉歐蕾</li>
+        <li>熟成檸果</li>
+    </ul>
+    <script>
+        function search(){
+            //輸入內容
+            let input = document.querySelector('#input').value;
+            //飲料列表
+            let li = document.querySelectorAll('li');
+            //飲料列表文字
+            li.forEach(function(data){
+                if(data.textContent.indexOf(input) > -1){
+                    data.style.display = '';
+                }else{
+                    data.style.display = 'none';
+                }
+            })
+            
+        }
+    </script>
+</body>
+</html>

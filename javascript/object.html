@@ -55,6 +55,19 @@
             console.log(drink.title);
             console.log(drink.price);
         })
+        let drinks_title = drinks.map(function(drink){
+            return drink.title;
+        })
+        console.log(drinks_title);
+        let drinks_price = drinks.map(function(drink){
+            return drink.price;
+        })
+        console.log(drinks_price);
+
+        let total = drinks_price.reduce(function(a,b){
+            return a+b;
+        })
+        console.log(total);
     </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <button onclick="change()">click 2</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consectetur quos amet, rerum adipisci error accusantium quis doloremque tempore eos obcaecati voluptas repudiandae assumenda ratione recusandae quae, reprehenderit, qui minus!
+    </p>
+    <script>
+        let btn = document.querySelector('#btn');
+        btn.onclick = function(){
+            console.log('test');
+            // let p = document.querySelector('p');
+            // p.style.color = 'red';
+            document.querySelector('p').style.color = 'red';
+        }
+        function change(){
+            document.querySelector('p').style.color = 'greenyellow';
+        }
+    </script>
+</body>
+</html>
