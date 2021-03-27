@@ -8,12 +8,23 @@
     <title>Document</title>
     <style>
         .modal {
-            position: relative;
-            display: none;
+            position: fixed;
+            width: 100%;
+            /* display: none; */
+            z-index: -1;
+            opacity: 0;
+
+            transition: .3s;
         }
         .modal.active {
-            display: block;
+            /* display: block; */
+            /* animation: fade-in 0.5s; */
+
+            z-index: 1;
+            opacity: 1;
+        
         }
+
         .modal-overlay {
             position: fixed;
             width: 100%;
@@ -30,6 +41,13 @@
             width: 70%;
             max-width: 750px;
             margin: 75px auto 0;
+            transform: translateY(-100px);
+            transition:  .3s;
+        }
+        .modal.active .modal-container {
+            transform: translateY(0);
+            transition:  .3s;
+           /* animation: down .3s forwards; */
         }
         .modal-close-icon {
             right: -25px;
@@ -46,6 +64,14 @@
             border:2px solid #eee;
             box-shadow: 0 0 8px #000;
             cursor: pointer;
+        }
+        @keyframes fade-in {
+            from {opacity: 0;}
+        }
+        @keyframes down {
+            to {
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
