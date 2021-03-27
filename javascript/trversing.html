@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">title 123</h2>
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil quidem fuga minus explicabo illo sequi praesentium unde totam enim! Nemo laborum unde dolore repellendus odio recusandae sit, dolorum rem!
+        </p><!-- asdf -->
+        <div class="menu">
+            <ul>
+                <li class="list">list 1</li>
+                <li class="list">list 2</li>
+                <li class="list">list 3</li>
+                <li class="list">list 4</li>
+            </ul>
+        </div>
+        <a href="#" class="link">link</a>
+        <script>
+            let content = document.querySelector('.content');
+            console.log(content);
+            // 父層
+            console.log(content.parentElement);
+            console.log(content.parentNode);
+            //同輩
+            console.log(content.nextElementSibling);
+            console.log(content.previousElementSibling);
+            console.log(content.nextSibling);
+            console.log(content.previousSibling);
+            //子輩
+            console.log(content.children);
+            console.log(content.childNodes[0].textContent);
+
+            let ul = document.querySelector('ul');
+            // console.log(ul.children);
+            // console.log(ul.childNodes);
+            // let c = document.querySelector('.list').childNodes[0].textContent;
+            let c = document.querySelector('.list').textContent;
+            console.log(c);
+            
+            
+            
+
+            
+            
+        </script>
+    </div>
+</body>
+</html>
