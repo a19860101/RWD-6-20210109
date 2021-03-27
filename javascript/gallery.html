@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery-thumb {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/5224401_500.jpg" class="gallery-main">
+        <div class="gallery-thumbs">
+            <img src="images/5224401_500.jpg" class="gallery-thumb">
+            <img src="images/5224402_500.jpg" class="gallery-thumb">
+            <img src="images/5224403_500.jpg" class="gallery-thumb">
+            <img src="images/5224404_500.jpg" class="gallery-thumb">
+        </div>
+    </div>
+    <script>
+        let thumbs = document.querySelectorAll('.gallery-thumb');
+
+        for(let thumb of thumbs){
+            // thumb.onclick = e => {
+            //     // console.log(e.target.src);
+            //     // console.log(e.target.getAttribute('src'));
+            //     let newImg = e.target.getAttribute('src');
+            //     document.querySelector('.gallery-main').setAttribute('src',newImg);
+            // } 
+            thumb.onclick = function(){
+                let newImg = this.getAttribute('src');
+                document.querySelector('.gallery-main').setAttribute('src',newImg);
+            }
+        }
+
+    </script>
+</body>
+</html>
