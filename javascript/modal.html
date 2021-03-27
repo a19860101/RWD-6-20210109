@@ -71,11 +71,34 @@
     </div>
     <script>
         let modalBtns = document.querySelectorAll('.modal-btn');
+        let modals = document.querySelectorAll('.modal');
         for(let modalBtn of modalBtns){
             modalBtn.onclick = e => {
                 console.log(e.target.dataset.modal);
                 let modal = e.target.dataset.modal;
                 document.querySelector(modal).classList.add('active');
+            }
+        }
+
+        // 關閉做法1
+        // let modalClose = document.querySelectorAll('.modal-close');
+        // for(let close of modalClose){
+        //     close.onclick = e => {
+        //         console.log(e.target);
+        //         for(let modal of modals){
+        //             modal.classList.remove('active');
+        //         }
+        //     }
+        // }
+
+        // 關閉做法2
+        document.onclick = e => {
+            // console.log(e.target);
+            if(e.target.className.indexOf('modal-close') > -1){
+                for(let modal of modals){
+                    modal.classList.remove('active');
+                    console.log('close');
+                }
             }
         }
     </script>
