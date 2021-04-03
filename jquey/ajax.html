@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <script>
+        $(function(){
+            let url = 'data.json';
+            $.ajax({
+                url: url,
+                dataType:'json',
+                success:function(data){
+                    // console.log(data);
+                    for(let d of data){
+                        console.log(d);
+                        let c = `<div class="item">
+                                    <h2>${d.title}</h2>
+                                    <img src="images/${d.images}" width="200">
+                                </div>`;
+                        $('.container').append(c);
+                    }
+                    
+                },
+                error:function(){
+                    console.log('error');
+                    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
