@@ -31,7 +31,7 @@ nav ul {
 nav li {
     margin: 0 15px;
     padding: 15px 0;
-    border-bottom: 1px solid #535353;
+    /* border-bottom: 1px solid #535353; */
 }
 nav .menu {
     display: none;
@@ -67,7 +67,15 @@ nav .menu a::after {
 /* nav .menu a::before {
     content: "abc"
 } */
+nav .toggle {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
 @media(min-width: 768px){
+    nav .toggle {
+        display: none;
+    }
     nav {
         border-bottom:2px #fff solid;
     }
