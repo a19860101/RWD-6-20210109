@@ -49,6 +49,9 @@ nav a {
 nav .menu a:hover::after {
     transform:scaleX(1);
 }
+nav .menu a.active::after {
+    transform:scaleX(1);
+}
 nav .menu a::after {
     content: "";
     display: inline-block;
