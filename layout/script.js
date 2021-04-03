@@ -37,4 +37,8 @@ $(function(){
             }
         })
     })
+    $('.toggle').click(function(){
+        $('.menu').toggle(300);
+        // $('.menu').slideToggle(300);
+    })
 })

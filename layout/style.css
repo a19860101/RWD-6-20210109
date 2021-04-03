@@ -14,6 +14,7 @@ nav {
     position: fixed;
     z-index: 999;
 }
+
 nav .logo a{
     font-weight: bold;
     font-size: 24px;
@@ -29,8 +30,8 @@ nav ul {
     list-style: none;
 }
 nav li {
-    margin: 0 15px;
-    padding: 15px 0;
+    margin: 0;
+    padding: 20px 0;
     /* border-bottom: 1px solid #535353; */
 }
 nav .menu {
@@ -76,6 +77,9 @@ nav .toggle {
     nav .toggle {
         display: none;
     }
+    nav .logo {
+        margin-bottom: 0px;
+    }
     nav {
         border-bottom:2px #fff solid;
     }
@@ -85,6 +89,7 @@ nav .toggle {
         flex-direction: row;
     }
     nav li {
+        margin: 0 15px;
         padding: 0;
         border-bottom: 0;
     }
