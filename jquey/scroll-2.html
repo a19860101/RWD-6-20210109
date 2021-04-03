@@ -46,15 +46,16 @@
             display: block;
             width: 50px;
             height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            line-height: 50px;
+            text-align: center;
             position: fixed;
             right: 15px;
             bottom: 15px;
             background-color: #222;
             color: #fff;
             text-decoration: none;
+
+            display: none;
         }
     </style>
 </head>
@@ -97,6 +98,18 @@
                     scrollTop: 0
                 })
             })
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                console.log(h);
+                if(h > 800){
+                    // $('#gotop').show();
+                    $('#gotop').fadeIn();
+                }else{
+                    // $('#gotop').hide();
+                    $('#gotop').fadeOut();
+                }
+                
+            });
         })
     </script>
 </body>
