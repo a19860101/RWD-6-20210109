@@ -1,3 +1,4 @@
+new WOW().init();
 $(function(){
     $('.menu').find('a').click(function(e){    
         let target = $(this).data('target');
