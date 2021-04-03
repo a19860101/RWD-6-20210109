@@ -93,8 +93,8 @@
         $(function(){
             $('nav').find('a').click(function(e){
                 
-                $('nav').find('a').removeClass('active');
-                $(this).addClass('active');
+                // $('nav').find('a').removeClass('active');
+                // $(this).addClass('active');
 
                 let href = $(this).attr('href');
                 let target = $(this).data('target');
@@ -119,7 +119,6 @@
             })
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
-                console.log(h);
                 let ani_in = 'jackInTheBox';
                 let ani_out = 'hinge';
                 if(h > 800){
@@ -131,6 +130,17 @@
                     // $('#gotop').fadeOut();
                     $('#gotop').removeClass(ani_in).addClass(['animated',ani_out]);
                 }
+
+                $('nav').find('a').each(function(){
+                    let target = $(this).data('target');
+                    let distance = $(target).offset().top;
+                    console.log(distance);
+                    
+                    if(h > distance - 100){
+                        $('nav').find('a').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                })
                 
             });
         })
