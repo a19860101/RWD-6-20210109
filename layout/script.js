@@ -41,4 +41,13 @@ $(function(){
         $('.menu').toggle(300);
         // $('.menu').slideToggle(300);
     })
+    $(window).resize(function(){
+        let w = $(window).width();
+        // console.log(w);
+        if(w > 768 ){
+            $('.menu').show();
+        }else{
+            $('.menu').hide();
+        }
+    });
 })
