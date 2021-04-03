@@ -27,6 +27,15 @@
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+
+            transition:.4s;
+        }
+        nav a.active {
+            background-color: #ffe555;
+            color: #222;
         }
         .container {
             width: 100%;
@@ -84,6 +93,9 @@
         $(function(){
             $('nav').find('a').click(function(e){
                 
+                $('nav').find('a').removeClass('active');
+                $(this).addClass('active');
+
                 let href = $(this).attr('href');
                 let target = $(this).data('target');
                 // console.log(href,target);
