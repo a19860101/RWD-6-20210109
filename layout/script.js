@@ -1,5 +1,5 @@
 $(function(){
-    $('.menu').find('a').click(function(){    
+    $('.menu').find('a').click(function(e){    
         let target = $(this).data('target');
         if(target == '#search'){return;}
         let distance = $(target).offset().top;
@@ -7,6 +7,13 @@ $(function(){
         $('html,body').animate({
             scrollTop: distance - nav_h
         })
+        e.preventDefault();
+    })
+    $('#gotop').click(function(e){
+        $('html,body').animate({
+            scrollTop: 0
+        });
+        e.preventDefault();
     })
     $(window).scroll(function(){
         let h = $(this).scrollTop();
