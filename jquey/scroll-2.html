@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
@@ -77,19 +78,21 @@
         <a href="#contact" data-target="#contact">Contact</a>
     </nav>
     <div class="container" id="about">
-        <h1>ABOUT</h1>
+        <h1 class="wow fadeIn">ABOUT</h1>
     </div>
     <div class="container" id="service">
-        <h1>SERVICE</h1>
+        <h1 class="wow zoomIn">SERVICE</h1>
     </div>
     <div class="container" id="product">
-        <h1>PRODUCT</h1>
+        <h1 class="wow zoomIn">PRODUCT</h1>
     </div>
     <div class="container" id="contact">
-        <h1>CONTACT</h1>
+        <h1 class="wow zoomIn">CONTACT</h1>
     </div>
     <a href="#" id="gotop">TOP</a>
     <script>
+        new WOW().init();
+
         $(function(){
             $('nav').find('a').click(function(e){
                 
