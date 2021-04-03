@@ -81,7 +81,8 @@
     <a href="#" id="gotop">TOP</a>
     <script>
         $(function(){
-            $('nav').find('a').click(function(){
+            $('nav').find('a').click(function(e){
+                
                 let href = $(this).attr('href');
                 let target = $(this).data('target');
                 // console.log(href,target);
@@ -90,13 +91,18 @@
                 $('html,body').animate({
                     scrollTop: distance
                 })
+
+                // return false;
+                e.preventDefault();
                 
             })
 
-            $('#gotop').click(function(){
+            $('#gotop').click(function(e){
                 $('html,body').animate({
                     scrollTop: 0
                 })
+
+                e.preventDefault();
             })
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
