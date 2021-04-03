@@ -17,8 +17,15 @@ $(function(){
     })
     $(window).scroll(function(){
         let h = $(this).scrollTop();
-        console.log(h);
+        let ani_in = 'fadeInUp';
+        let ani_out = 'fadeOutDown';
         
+        if(h > 800){
+            $('#gotop').show().removeClass(ani_out).addClass(['animated',ani_in]);
+        }else{
+            $('#gotop').removeClass(ani_in).addClass(['animated',ani_out]);
+        }
+
         $('.menu').find('a').each(function(){
             let target = $(this).data('target');
             if(target == '#search'){return;}
