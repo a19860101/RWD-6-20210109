@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+    <style>
+
+        .container {
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .box {
+            flex: 0 0 calc(100% / 4);
+            height: 200px;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        $(function(){
+            $.ajax({
+                url:'https://picsum.photos/v2/list',
+                data:{
+                    limit:20
+                },
+                success(data){
+                    console.log(data);
+                    for(let img of data){
+                        let c = `
+                            <div class="box">
+                                <a href="${img.download_url}" data-fancybox="g" data-caption="${img.author}">
+                                <img src="${img.download_url}">
+                                </a>
+                            </div>
+                        `;
+                        $('.container').append(c);
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>
