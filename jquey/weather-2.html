@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <select name="city" id="city">
+            <option>--請選擇--</option>
+            <option value="Taipei">台北</option>
+            <option value="Tokyo">東京</option>
+            <option value="Seoul">首爾</option>
+            <option value="Bangkok">曼谷</option>
+        </select>
+        <div class="output"></div>
+    </div>
+    <script>
+        $(function(){
+            $('#city').change(function(){
+                $('.output').empty();
+                let city = $(this).val();
+                console.log(city);
+                $.ajax({
+                    url:'https://api.openweathermap.org/data/2.5/weather',
+                    data:{
+                        q:city,
+                        appid:'b1ecbccd638b763d489602917ba47cc3',
+                        units:'metric',
+                        lang:'zh_TW'
+                    },
+                    success(data){
+                        console.log(data);
+                        let c = `
+                            <h2>目前溫度 ${data.main.temp} 
+                                <br> 
+                                體感溫度 ${data.main.feels_like}
+                                <br>
+                                ${data.weather[0].description}    
+                            </h2>
+                            <div>最高溫${data.main.temp_max}最低溫${data.main.temp_min}</div>
+                        `;
+                        $('.output').append(c);
+                    }
+                })
+            });
+        })
+    </script>
+</body>
+</html>
