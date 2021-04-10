@@ -6,52 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
     <style>
-
         .container {
-            width: 1200px;
-            display: flex;
-            flex-wrap: wrap;
             margin: auto;
-        }
-        .box {
-            flex: 0 0 calc(100% / 4);
-            height: 200px;
-            overflow: hidden;
         }
         img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-
-    </div>
+    <div class="container"></div>
     <script>
         $(function(){
             $.ajax({
                 url:'https://picsum.photos/v2/list',
-                data:{
-                    limit:20
+                data: {
+                    limit: 10
                 },
                 success(data){
-                    console.log(data);
+                    
                     for(let img of data){
                         let c = `
                             <div class="box">
-                                <a href="${img.download_url}" data-fancybox="g" data-caption="${img.author}">
                                 <img src="${img.download_url}">
-                                </a>
                             </div>
                         `;
                         $('.container').append(c);
+                        
                     }
+
+                    
+                    
                 }
+            })
+            $('.container').imagesLoaded(function(){
+                $('.container').masonry({
+                    isFitWidth: true
+                })
             })
         })
     </script>
