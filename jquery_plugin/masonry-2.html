@@ -33,14 +33,16 @@
             $.ajax({
                 url:'https://picsum.photos/v2/list',
                 data: {
-                    limit: 30
+                    limit: 10
                 },
                 success(data){
                    
                     for(let img of data){
                         let c = `
                             <div class="box">
-                                <img src="${img.download_url}">
+                                <a href="${img.download_url}" data-fancybox="g" data-caption="${img.author}">
+                                    <img src="${img.download_url}">
+                                </a>
                             </div>
                         `;
                         $('.container').append(c);
