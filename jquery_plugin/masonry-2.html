@@ -29,19 +29,15 @@
     <div class="container"></div>
     <script>
         $(function(){
-            
             $.ajax({
-                url:'https://picsum.photos/v2/list',
-                data: {
-                    limit: 10
-                },
+                url:'data.json',
                 success(data){
                    
                     for(let img of data){
                         let c = `
                             <div class="box">
-                                <a href="${img.download_url}" data-fancybox="g" data-caption="${img.author}">
-                                    <img src="${img.download_url}">
+                                <a href="images/${img.image}" data-fancybox="g" data-caption="${img.title}">
+                                    <img src="images/${img.image}">
                                 </a>
                             </div>
                         `;
@@ -53,12 +49,37 @@
                             isFitWidth: true
                         })
                     })
+                }
+            })
+            // $.ajax({
+            //     url:'https://picsum.photos/v2/list',
+            //     data: {
+            //         limit: 10
+            //     },
+            //     success(data){
+                   
+            //         for(let img of data){
+            //             let c = `
+            //                 <div class="box">
+            //                     <a href="${img.download_url}" data-fancybox="g" data-caption="${img.author}">
+            //                         <img src="${img.download_url}">
+            //                     </a>
+            //                 </div>
+            //             `;
+            //             $('.container').append(c);
+                        
+            //         }
+            //         $('.container').imagesLoaded(function(){
+            //             $('.container').masonry({
+            //                 isFitWidth: true
+            //             })
+            //         })
                     
 
                     
                     
-                }
-            })
+            //     }
+            // })
             
         })
     </script>
