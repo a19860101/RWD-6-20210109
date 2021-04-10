@@ -41,6 +41,7 @@
                                 <br>
                                 ${data.weather[0].description}    
                             </h2>
+                            <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
                             <div>最高溫${data.main.temp_max}最低溫${data.main.temp_min}</div>
                         `;
                         $('.output').append(c);
